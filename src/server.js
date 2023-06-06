@@ -10,9 +10,7 @@ const startServer = async () => {
     //  database connection
     // await dbConnection();
 
-    const channel = 'ini test channel';
-
-    const app = await expressApp(channel);
+    const app = await expressApp();
 
     app.listen(config.app.port, () => {
         console.log(
